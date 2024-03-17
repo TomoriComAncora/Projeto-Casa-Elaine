@@ -66,9 +66,12 @@ nav {
 }
 
 #navbar a:hover::after {
-  color: #fff;
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+#navbar a:hover{
+  color: #fff;
 }
 
 #doacao {
@@ -159,4 +162,52 @@ header {
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
   margin-bottom: 1rem;
+}
+
+#contato{
+  background-color: #f6e2d9;
+}
+
+#contato .container{
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contato{
+  display: flex;
+  flex-direction: column;
+}
+
+.contato h1, .contato p, .contato a{
+  margin-bottom: 2rem;
+}
+
+.contato h1{
+  font-size: 3rem;
+}
+
+.contato a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contato a:hover{
+  color: #d45e4a;
+}
+
+.contato .zap{
+  font-size: 1.5rem;
+}
+
+.social a{
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.social a:hover{
+  color: #d45e4a;
 }
