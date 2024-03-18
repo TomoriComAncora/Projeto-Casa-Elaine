@@ -14,11 +14,9 @@ a {
 }
 
 #logo {
-  width: 70px;
-  height: 70px;
-  background-image: url("./assets/Captura_de_tela_2024-03-14_113401-removebg-preview.png");
   background-position: center;
   background-size: cover;
+  width: 70px;
 }
 
 nav {
@@ -44,17 +42,20 @@ nav {
   cursor: pointer;
 }
 
-#navbar a {
+#navbar li {
   display: inline-block;
   position: relative;
-  color: #000;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   transition: 0.2s;
 }
 
-#navbar a::after {
+#navbar li a{
+  color: #000;
+}
+
+#navbar li::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -67,7 +68,7 @@ nav {
   transition: transform 0.25s ease-out;
 }
 
-#navbar a:hover::after {
+#navbar li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -180,14 +181,14 @@ header {
 }
 
 #contato{
-  background-color: #f6e2d9;
+  background-color: #f2bea9;
 }
 
 #contato .container{
   display: flex;
   justify-content: space-around;
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .contato{
@@ -228,4 +229,32 @@ header {
 
 .social a:hover{
   color: #d45e4a;
+}
+
+#parceiros h1{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.parceiros{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.parceiros #irani{
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#local h2, #local p{
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#local h2{
+  font-weight: bold;
+  color: #000;
 }
