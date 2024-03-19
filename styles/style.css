@@ -26,7 +26,6 @@ nav {
 }
 
 #navbar {
-  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -99,7 +98,7 @@ nav {
 }
 
 header {
-  background-image: url("./assets/Foto-futura-casa.png");
+  background-image: url("../assets/Foto-futura-casa.png");
   background-size: cover;
   background-position: center;
 }
