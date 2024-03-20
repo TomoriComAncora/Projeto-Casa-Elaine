@@ -97,6 +97,40 @@ nav {
   flex-direction: column;
 }
 
+header{
+  background-image: url('../assets/dona-elaine-familia.png');
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+}
+
+#content header #banner{
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+#banner h1 {
+  background-color: #d45e4a;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1em;
+  margin: 0;
+  padding: 1.2rem;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+header #banner h1::first-letter{
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #fff;
+  width: 100px;
+  left:0;
+  bottom:0
+}
+
 .container {
   padding: 2.5rem 1.5rem;
   margin: 0 5rem;
