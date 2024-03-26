@@ -16,7 +16,7 @@ a {
 #logo {
   background-position: center;
   background-size: cover;
-  width: 70px;
+  width: 4.3rem;
 }
 
 nav {
@@ -30,11 +30,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-size: 1rem;
-  min-width: 100%;
+  max-width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
   background-color: #f6e2d9;
-  max-height: 90px;
+  max-height: 5.6rem;
 }
 
 #navbar li {
@@ -101,13 +101,12 @@ header{
   background-image: url('../assets/dona-elaine-familia.png');
   background-position: center;
   background-size: cover;
-  height: 30rem;
-  display: flex;
 }
 
 #content header #banner{
   display: flex;
   align-items: flex-end;
+  height: 28rem;
   padding: 1.5rem;
 }
 
@@ -177,6 +176,7 @@ header #banner h1::first-letter{
   background-size: cover;
   background-position: center;
   width: 50%;
+  overflow: hidden;
 }
 
 #nos img{
@@ -185,6 +185,10 @@ header #banner h1::first-letter{
   max-width: 100%;
   max-height: 100%;
   z-index: 1;
+}
+
+#nos img:hover{
+  transform: scale(1.1);
 }
 
 #contato {
@@ -240,31 +244,103 @@ header #banner h1::first-letter{
   color: #d45e4a;
 }
 
-#parceiros h1 {
+#parceiros h1{
   font-weight: bold;
   font-size: 3rem;
 }
 
-.parceiros {
+#parceiros .logos{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.parceiros #irani {
+.parceiros #irani{
   background-size: cover;
   background-position: center;
-  width: 100px;
+  width: 6.25rem;
   border-radius: 50%;
 }
 
-#local h2,
-#local p {
-  font-size: 20px;
+#local h2, #local p{
+  font-size: 1.25rem;
   font-family: "Open Sans", sans-serif;
 }
 
-#local h2 {
+#local h2{
   font-weight: bold;
   color: #000;
+}
+
+/* responsivo */
+@media (max-width: 450px){
+  #logo {
+    width: 2.5rem;
+  }
+  
+  #navbar li{
+    font-size: 1.5rem;
+    margin: 0 .1rem;
+  }
+
+  #navbar {
+    font-size: .5rem;
+    max-height: 4.3rem;
+  }
+
+  #doacao {
+    line-height: 2;
+    margin-bottom: 23rem;
+    min-width: 7rem;
+    width: 2rem;
+  }
+
+  #content header #banner{
+    height: 24rem;
+    padding: 1rem;
+  }
+
+  #banner h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 2.5rem 1rem;
+    margin: 0 1rem;
+  }
+
+  .container h2 {
+    font-size: 2rem;
+  }
+
+  #contato .container{
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  #nos{
+    width: 100%;
+  }
+
+  .contato h1{
+    font-size: 2.5rem;
+  }
+
+  .contato h1, .contato p, .contato a{
+    margin-bottom: 1rem;
+  }
+
+  .social a{
+    font-size: 2rem;
+  }
+
+  #parceiros h1{
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .parceiros #irani{
+    width: 70px;
+  }
 }
